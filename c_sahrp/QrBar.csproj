@@ -19,7 +19,7 @@
 
   <ItemGroup>
     <Reference Include="zxing">
-      <HintPath>bin\Release\net6.0-windows\zxing.dll</HintPath>
+      <HintPath>..\..\..\..\..\Desktop\zxing.dll</HintPath>
     </Reference>
   </ItemGroup>
 

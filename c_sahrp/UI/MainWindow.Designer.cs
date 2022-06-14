@@ -129,6 +129,7 @@
             // leerUnCódigoQRODeBarraToolStripMenuItem
             // 
             this.leerUnCódigoQRODeBarraToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.leerUnCódigoQRODeBarraToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.leerUnCódigoQRODeBarraToolStripMenuItem.Name = "leerUnCódigoQRODeBarraToolStripMenuItem";
             this.leerUnCódigoQRODeBarraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.leerUnCódigoQRODeBarraToolStripMenuItem.Text = "Scan QR";
@@ -137,6 +138,7 @@
             // salirDeLaAplicaciónToolStripMenuItem
             // 
             this.salirDeLaAplicaciónToolStripMenuItem.BackColor = System.Drawing.Color.Gray;
+            this.salirDeLaAplicaciónToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control;
             this.salirDeLaAplicaciónToolStripMenuItem.Name = "salirDeLaAplicaciónToolStripMenuItem";
             this.salirDeLaAplicaciónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.salirDeLaAplicaciónToolStripMenuItem.Text = "Exit";
