@@ -18,6 +18,7 @@ namespace c_sahrp
             comboBoxCode.Items.Add("MSI Barcode");
             comboBoxCode.Items.Add("Aztec Code");
             comboBoxCode.Items.Add("Matrix Code");
+            
             comboBoxCode.SelectedIndex = 0;
         }
 
@@ -33,6 +34,7 @@ namespace c_sahrp
             {
                 pbgenerar.Image.Save(sfd.FileName);
             }
+            textBoxGetCode.Clear();
         }
         public void CodeTypes()
         {
@@ -104,6 +106,7 @@ namespace c_sahrp
         private void generateButton1_Click(object sender, EventArgs e)
         {
             SaveCode();
+            textBoxGetCode.Clear();
         }
 
         private void leerUnCódigoQRODeBarraToolStripMenuItem_Click(object sender, EventArgs e)
