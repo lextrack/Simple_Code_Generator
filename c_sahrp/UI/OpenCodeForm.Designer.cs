@@ -64,7 +64,7 @@
             // 
             // pbshowfile
             // 
-            this.pbshowfile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbshowfile.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbshowfile.Location = new System.Drawing.Point(12, 69);
             this.pbshowfile.Name = "pbshowfile";
             this.pbshowfile.Size = new System.Drawing.Size(330, 297);
@@ -76,7 +76,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(354, 420);
             this.Controls.Add(this.txtShowCode);
             this.Controls.Add(this.btnOpenCode);
@@ -87,7 +87,8 @@
             this.MinimizeBox = false;
             this.Name = "OpenCodeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "QR code scanner";
+            this.Text = "Code scanner";
+            this.Load += new System.EventHandler(this.OpenCodeForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbshowfile)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -9,19 +9,26 @@ namespace QrBar
             InitializeComponent();
         }
 
+        private void OpenCodeForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnOpenCode_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog()
             {
-                Filter = "Imagen png|*.png",
-                InitialDirectory = @"C:\Users\ariel\Desktop\code"
+                Filter = "PNG (*.png)|*.png|JPG (*.jpg)|*.jpg|BMP (*.bmp)|*.bmp",
+                InitialDirectory = @"C:\",
+                Title = "Browse codes"
+
             };
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 pbshowfile.Image = Image.FromFile(ofd.FileName);
-                BarcodeReader br = new BarcodeReader();
-                string texto = br.Decode((Bitmap)pbshowfile.Image).ToString();
-                txtShowCode.Text = texto;
+                BarcodeReader cod = new BarcodeReader();
+                string Usertxt = cod.Decode((Bitmap)pbshowfile.Image).ToString();
+                txtShowCode.Text = Usertxt;
             }
         }
     }
